@@ -1,0 +1,23 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 307px;
+    align-items: baseline;
+    flex-grow: 1;
+    
+}
+
+.base{
+    height: 100%;
+    display: flex;
+    background-color:#219EBC ;
+}
+
+.centro{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    background-color: #FEFEFE;
+
+}
