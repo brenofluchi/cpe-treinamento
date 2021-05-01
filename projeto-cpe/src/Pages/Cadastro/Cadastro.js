@@ -9,7 +9,8 @@ function Cadastro() {
     <div className= "base">
         <div className= "centro">       
             <div className= "Container">
-                
+                  
+            
                 <div className= "inputs">
                     <h1>Cadastro</h1>
                         <Form>
@@ -32,11 +33,6 @@ function Cadastro() {
                         
 
                         <Form.Row>
-                            <Form.Group as={Col} controlId="formGridCidade">
-
-                            <Form.Control type="text" placeholder="Cidade"/>
-                            </Form.Group>
-
                             <Form.Group as={Col} controlId="formGridState">
                             <Form.Control as="select"  placeholder="Estado">
                                 <option>...</option>
@@ -71,18 +67,23 @@ function Cadastro() {
                             </Form.Control>
                             </Form.Group>
 
+                            <Form.Group as={Col} controlId="formGridCidade">
+                            <Form.Control type="text" placeholder="Cidade"/>
+                            </Form.Group>
+
                             <Form.Group as={Col} controlId="formGridCEP">
                             <Form.Control placeholder="CEP"/>
                             </Form.Group>
                         </Form.Row>
                         
                         <Form.Group controlId="formGridEndereco">
-                            <Form.Control type=" " placeholder="Endereço" />
+                            <Form.Control type=" " placeholder="Logradouro" />
                         </Form.Group>
+                        
                         <Form.Group controlId="formGridInteresse">
                             <Form.Control type="textarea " placeholder="Qual o seu intercâmbio dos sonhos?" />
                         </Form.Group>
-
+                       
                         <Form.Group  controlId="formGridPassword">
                             
                             <Form.Control type="password" placeholder="Senha" />
@@ -95,8 +96,9 @@ function Cadastro() {
                             <Form.Group id="formGridCheckbox">
                             <Form.Check type="checkbox" label="Concordo com os termos e condições" />
                         </Form.Group> 
+                        <div className="cadastrar">
                         <Button variant="outline-primary" >Cadastrar</Button>
-                        
+                        </div>
                         </Form>
                     
                 </div>
