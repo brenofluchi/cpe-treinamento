@@ -1,15 +1,17 @@
 .Container{
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    max-width: 307px;
-    align-items: baseline;
+    margin-left: 20px;
+    margin-top: 20px;
+    max-width: 720px;
     flex-grow: 1;
     
 }
 
 .base{
     height: 100%;
+    width: 1440px;
+    height: 1024px;
     display: flex;
     background-color:#219EBC ;
 }
@@ -20,4 +22,10 @@
     display: flex;
     background-color: #FEFEFE;
 
+}
+.inputs{
+    display: flex;
+    flex-flow: column ;
+    
+    
 }
