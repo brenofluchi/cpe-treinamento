@@ -3,9 +3,14 @@ import "./Cadastro.css";
 import {Form, Col,Button} from "react-bootstrap";
 
 
+
+
 function Cadastro() {
+
+
     
     return (
+       
     <div className= "base">
         <div className= "centro">       
             <div className= "Container">
@@ -101,11 +106,11 @@ function Cadastro() {
                         </div>
                         </Form>
                     
-                </div>
-            </div>  
+                </div>,
+            </div> 
         </div>
     </div> 
-    
+
 )    
 }
 
