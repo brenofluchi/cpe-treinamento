@@ -1,7 +1,7 @@
 import React from "react";
 
 function Historia() {
-    return <h1>Historia</h1>;
+    return <h1>Historiatestestes</h1>;
 }
 
 export default Historia;
