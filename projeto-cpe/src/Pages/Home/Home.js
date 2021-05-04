@@ -1,24 +1,25 @@
 import React from "react";
+import { Button, ButtonGroup } from "react-bootstrap";
 import "./Home.css";
 
 
 function Home() {
-    return <div>
-        <header>
-            <h2>Logo/Nome</h2>
-            <h2>Cadastre-se</h2>
-            <h2>Login</h2>
-        </header>
-        <body>
-            <h1>Home</h1>
-            <h1>História</h1>
-            <h1>Intercâmbios</h1>
-        </body>
-        <footer>
-            <h3>Redes Sociais</h3>
-            <h3>Privacidade e Termos</h3>
-            <h3>Fale Conosco</h3>
-        </footer>
+    return <div className="container">
+        <div className="header">
+            <div className="foto">
+            <img src = "/images/logo4menor.png" alt = "Volare Intercâmbios"/>
+            </div>
+            <Button variant="light">Cadastre-se</Button>
+            <Button variant="light">Login</Button>
+        </div>
+        <div className= "botoes">
+            <ButtonGroup size="lg" className="mb-2">
+                <Button>Home</Button>
+                <Button>História</Button>
+                <Button>Intercâmbios</Button>
+            </ButtonGroup>
+        </div>
+    
     </div>;
 
 }
