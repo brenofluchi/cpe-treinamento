@@ -1,18 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
 .baseFooter {
-    color: black;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 50px;
     background-color:#FFBC08;
-    justify-content: space-between; 
     display: flex;
-    font-size: .75rem;
-    
-    
-}
-
-.redessociais{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
     justify-content: space-between;
-    font-size: .9em;
+    flex-wrap:wrap;
+    color: #219EBC;    
 }
 
+.conjunto{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row ;
+}
+
+
+.links{
+    list-style: none;   
+}
+
+.c2{
+    list-style: none;  
+}
+
+.c3{
+    list-style: none;   
+}
+
+
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+        
