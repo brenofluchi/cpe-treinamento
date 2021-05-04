@@ -39,8 +39,8 @@ function Cadastro() {
 
                         <Form.Row>
                             <Form.Group as={Col} controlId="formGridState">
-                            <Form.Control as="select"  placeholder="Estado">
-                                <option>...</option>
+                            <Form.Control as="select" defaultValue="Estado">
+                                <option>Estado</option>
                                 <option>AC</option>
                                 <option>AL</option>
                                 <option>AP</option>
@@ -102,11 +102,11 @@ function Cadastro() {
                             <Form.Check type="checkbox" label="Concordo com os termos e condições" />
                         </Form.Group> 
                         <div className="cadastrar">
-                        <Button variant="outline-primary" >Cadastrar</Button>
+                        <Button variant="outline-primary">Cadastrar</Button>
                         </div>
                         </Form>
                     
-                </div>,
+                </div>
             </div> 
         </div>
     </div> 

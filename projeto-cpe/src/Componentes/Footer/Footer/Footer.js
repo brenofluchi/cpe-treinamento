@@ -6,13 +6,13 @@ function Footer(props) {
      
     <div className= "baseFooter">  
         <div className= "descricao">
-                <ul className= "redessociais">
+                
                     <p>Facebook</p>  
                     <p>Instagram</p>
                     <p>Linkedin</p>
                     <p>Spotify</p>
-                    <p>Fale Conosco   (xx) xxxx-xxxx </p>
-                </ul>
+                    <p>Fale Conosco (xx) xxxx-xxxx </p>
+                
          
                  <hr/>
                 &copy;{new Date().getFullYear()} VOLARE INTERCÂMBIOS | Todos os direitos reservados | Política de Privacidade

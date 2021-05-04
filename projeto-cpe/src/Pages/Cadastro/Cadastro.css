@@ -1,10 +1,7 @@
 .Container{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-top: 20px;
-    size: 10em;
-    
+    margin-top: 0.5rem;  
 }
 
 .base{
@@ -14,22 +11,22 @@
     background-color:#219EBC ;
 }
 
-.centro{
-    height: 92%;
-    width: 1440px;
+.centro{ 
+    height: 38rem;
+    width: 100%;
     display: flex;
     background-color: #FEFEFE;
-
+    margin-bottom: 1.5em;
+    justify-content: center;
 }
+
 .inputs{
     display: flex;
     flex-flow: column ;
-    width: 400px;
-    box-sizing: 1em;
     align-items: center;
     justify-content: center;
-    
-    
+    margin-left: 0.3rem;
+    margin-right: 0.3rem; 
 }
 
 .cadastrar{
