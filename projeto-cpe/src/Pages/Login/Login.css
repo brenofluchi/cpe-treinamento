@@ -20,8 +20,10 @@
     flex-direction: column;
     margin-left: 16px;
     margin-right: 16px;
+    align-items: center;
 }
 .imagem
 {
     margin-bottom: 16px;
+    align-items: center;
 }

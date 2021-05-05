@@ -4,13 +4,16 @@ import "./Home.css";
 
 
 function Home() {
-    return <div className="container">
+    return (
+    <div className="container">
         <div className="header">
             <div className="foto">
-            <img src = "/images/logo4menor.png" alt = "Volare Intercâmbios"/>
+                <img src = "/images/logo4menorainda.png" alt = "Volare Intercâmbios"/>
             </div>
-            <Button variant="light">Cadastre-se</Button>
-            <Button variant="light">Login</Button>
+            <div className="cadastro">
+                <Button variant="light">Cadastro</Button>
+                <Button variant="light">Login</Button>
+            </div>
         </div>
         <div className= "botoes">
             <ButtonGroup size="lg" className="mb-2">
@@ -19,8 +22,8 @@ function Home() {
                 <Button>Intercâmbios</Button>
             </ButtonGroup>
         </div>
-    
-    </div>;
+    </div>
+    )
 
 }
 
