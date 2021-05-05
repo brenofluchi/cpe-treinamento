@@ -5,7 +5,7 @@ import "./Home.css";
 
 function Home() {
     return (
-    <div className="container">
+    <div className="containerHome">
         <div className="header">
             <div className="foto">
                 <img src = "/images/logo4menorainda.png" alt = "Volare Intercâmbios"/>
