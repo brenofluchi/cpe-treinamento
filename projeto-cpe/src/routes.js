@@ -1,11 +1,13 @@
 import React from "react";
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import Cadastro from "./Pages/Cadastro";
+import Footer from "./Componentes/Footer/Footer"
 import Historia from "./Pages/Historia";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Pagina from "./Pages/Pagina";
 import Perfil from "./Pages/Perfil";
+import Header from "./Componentes/Header";
 
 
 function Routes(){
@@ -20,10 +22,16 @@ function Routes(){
             <Route path="/login" component={Login}/>
             <Route path="/pagina" component={Pagina}/>
             <Route path="/perfil" component={Perfil}/>
+            <Route path="/footer" component={Footer}/>
+            <Route path="/header" component={Header}/>
+            <Route component={()=> <Redirect to= "/home" />}/>
         </Switch>
     </BrowserRouter>
     )
 }
+
+    
+
 
 
 export default Routes;
