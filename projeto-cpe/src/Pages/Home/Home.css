@@ -7,7 +7,6 @@
 .header
 {
     display: flex;
-    max-height: 25%;
     align-items: center;
     margin-left: 0%;
     position: relative;
@@ -34,6 +33,11 @@
 }
 .botoes
 {
-    margin-top: 35%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+.historia
+{
+    margin-right: 10%;
 }
