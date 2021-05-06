@@ -18,25 +18,27 @@
     color: #219EBC;    
 }
 
-.conjunto{
+.Footer{
     display: flex;
     width: 100%;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row ;
 }
 
-
-.links{
-    list-style: none;   
+.RedesSociais{
+    list-style: none;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.c2{
+.Contatos{
     list-style: none;  
 }
 
-.c3{
+.LinksUteis{
     list-style: none;   
 }
 
@@ -47,3 +49,14 @@
     justify-content: center;
 }
         
+@media(max-width:700px) {
+    .Footer{
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column ;
+    }
+ 
+}
