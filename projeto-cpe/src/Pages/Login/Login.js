@@ -18,7 +18,7 @@ function Login()
         <div className = "container">
             <div >
                 <div className = "imagem">
-                    <img src = "/images/logo4menor.png" alt = "Volare Intercâmbios"/>
+                    <a href="./Home" title = "Home" > <img src = "/images/logo4menor.png" alt = "Volare Intercâmbios"/> </a>
                 </div>
                 <Form className = "inputs">
                 <Form.Group controlId="formBasicEmail">

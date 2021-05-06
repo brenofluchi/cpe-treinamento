@@ -102,7 +102,7 @@ function Cadastro() {
                             <Form.Check type="checkbox" label="Concordo com os termos e condições" />
                         </Form.Group> 
                         <div className="cadastrar">
-                        <Button variant="outline-primary">Cadastrar</Button>
+                        <Button variant="outline-info">Cadastrar</Button>
                         </div>
                         </Form>
                     
