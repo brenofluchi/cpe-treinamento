@@ -8,7 +8,7 @@ function Home() {
     <div className="containerHome">
         <div className="header">
             <div className="foto">
-                <img src = "/images/logo4menorainda.png" alt = "Volare Intercâmbios"/>
+               <a href="./home" ><img src = "/images/logo4menorainda.png" alt = "Volare Intercâmbios"/></a>
             </div>
             <div className="cadastro">
                 <Button variant="light">Cadastro</Button>
