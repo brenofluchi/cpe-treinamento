@@ -3,10 +3,13 @@ import Routes from "./routes";
 
 import "./global.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
 import Footer from "./Componentes/Footer/Footer";
 import  "./App.css";
 
 
+=======
+>>>>>>> História
 
 function App() {
   return  (
