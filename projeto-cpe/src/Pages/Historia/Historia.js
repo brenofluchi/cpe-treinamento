@@ -5,34 +5,39 @@ import "./Historia.css";
 const depoimentos = [
     {
         id: 1,
-        title: "Breno, 21, Vancouver",
-        description: "Fui para o Canadá aprender francês",
+        title: "Breno, 21: Vancouver",
+        description: "''Precisando melhorar meu inglês, e, visando meu futuro profissional, comecei uma busca por agências que me proporcionassem mais segurança na viagem, então veio a escolha da Volare, que, com muita atenção, cuidou de todos os detalhes dessa experiência incrível.''",
+        foto: "/images/avatar/ph_breno.png",
     },
     {
         id:2,
-        title: "Lampinho, 24, Paris",
-        description: "A Volare mais legal",
+        title: "Lampinho, 24: Paris",
+        description: "''Foi a França o cenário da minha mais belle époque como estudante de Relações Internacionais. Condensadas em apenas seis meses vivi lá algumas das experiências mais incríveis e doces da minha vida, principalmente na Cidade Luz, Paris''",
+        foto: "/images/avatar/ph_lucas.png",
     },
     {
         id:3,
-        title: "Lucas, 21, Malta",
-        description: "Ainda não entendi direito",
-        foto: "/images/avatar/ph_lucas.jpg",
+        title: "Lucas, 21: Malta",
+        description: "''O clima é maravilhoso, até quente demais! A integração que a Volare oferece é ótima. A ilha tem um preço justo em tudo, transporte é bom, mas complicado dependendo do horário! Malta é um lugar super seguro. É um mundo à parte e que vale a pena ser visto e vivido!''",
+        foto: "/images/avatar/ph_lucas.png",
     },
     {
         id:4,
-        title: "Pedro, 20, Brighton",
-        description: "Acho que vai ser legal",
+        title: "Pedro, 20: Brighton",
+        description: "''O intercâmbio em Brighton é diversão garantidada para quem quer fugir dos eternos chuviscos londrinos, uma boa notícia: o clima em Brighton é agradável e quase sempre ensolarado. As temperaturas, no entanto, não sobem tanto – até mesmo no verão, quando as máximas ficam em torno dos 23, 24°C.''",
+        foto: "/images/avatar/ph_pedro.png",
     },
     {
         id:5,
-        title: "Vinícius, 22, Nova York",
-        description: "Eu gosto de Física",
+        title: "Vinícius, 22: Nova York",
+        description: "''A Volare me ajudou a realizar o sonho de viver em Nova York, e, além disso, durante um ano, fui aluno de suas escolas parceiras e aprimorei ao máximo o meu nível de inglês. Estou muito satisfeito com a experiência, e recomendo a empresa com toda certeza.''",
+        foto: "/images/avatar/ph_vinicius.png",
     },
     {
         id:6,
-        title: "Bruna, 20, Madri",
-        description: "NÚMEROS!!!!",
+        title: "Bruna, 20: Madri",
+        description: "''Passei um mês na Espanha, em especial, em Alcalá de Henares, Madri. Creio que minhas primeiras grandes impressões foram o choque cultural, as pequenas ruelas da cidade e os lindos prédios históricos. Quando voltei ao Brasil, percebi a evolução do meu Espanhol. Fiquei impressionada com a melhora da fala, da audição e da escrita.''", 
+        foto: "/images/avatar/ph_bruna.png",
     },
 ]
 
