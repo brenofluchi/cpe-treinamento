@@ -1,0 +1,51 @@
+.Intercambios{
+    background-color: #219EBC;
+
+}
+
+.Brighton{
+    margin-top: 4%;
+}
+
+.titulo{
+    background-color: #FFB703;
+    width: 435px;
+    height: 87px;
+    border-radius: 0px 24px 24px 0px;
+    margin-top: 40px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.titulo h1{
+    display: inline-block;
+    line-height: 2;
+    margin-left: 30%;
+    margin-right: 0;
+}
+
+.caixab {
+    position: relative;
+    width: 80%;
+    height: 280px;
+    left: 20%;
+    background: #023047;
+    border-radius: 58px 0px 0px 58px;
+    display: table;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.caixab p{
+    color: white;
+    text-align: justify;
+    vertical-align:middle;
+    display: table-cell;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caixab img{
+    width: 350px;
+    height: 280x;
+    margin-left: 18%;
+}
+
