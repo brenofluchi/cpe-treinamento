@@ -13,7 +13,7 @@ const depoimentos = [
         id:2,
         title: "Lampinho, 24: Paris",
         description: "''Foi a França o cenário da minha mais belle époque como estudante de Relações Internacionais. Condensadas em apenas seis meses vivi lá algumas das experiências mais incríveis e doces da minha vida, principalmente na Cidade Luz, Paris''",
-        foto: "/images/avatar/ph_lucas.png",
+        foto: "/images/avatar/ph_lampinho.png",
     },
     {
         id:3,
@@ -24,7 +24,7 @@ const depoimentos = [
     {
         id:4,
         title: "Pedro, 20: Brighton",
-        description: "''O intercâmbio em Brighton é diversão garantidada para quem quer fugir dos eternos chuviscos londrinos, uma boa notícia: o clima em Brighton é agradável e quase sempre ensolarado. As temperaturas, no entanto, não sobem tanto – até mesmo no verão, quando as máximas ficam em torno dos 23, 24°C.''",
+        description: "''O intercâmbio em Brighton é diversão garantida. Para quem quer fugir dos eternos chuviscos londrinos, uma boa notícia: o clima em Brighton é agradável e quase sempre ensolarado. As temperaturas, no entanto, não sobem tanto – até mesmo no verão, quando as máximas ficam em torno dos 23, 24°C.''",
         foto: "/images/avatar/ph_pedro.png",
     },
     {
@@ -36,7 +36,7 @@ const depoimentos = [
     {
         id:6,
         title: "Bruna, 20: Madri",
-        description: "''Passei um mês na Espanha, em especial, em Alcalá de Henares, Madri. Creio que minhas primeiras grandes impressões foram o choque cultural, as pequenas ruelas da cidade e os lindos prédios históricos. Quando voltei ao Brasil, percebi a evolução do meu Espanhol. Fiquei impressionada com a melhora da fala, da audição e da escrita.''", 
+        description: "''Passei um mês na Espanha, em especial, em Alcalá de Henares, Madri. Fiquei impressionada com o choque cultural, com as pequenas ruelas da cidade e os lindos prédios históricos. Quando voltei ao Brasil, percebi a evolução do meu Espanhol. Fiquei impressionada com a melhora da fala, da audição e da escrita.''", 
         foto: "/images/avatar/ph_bruna.png",
     },
 ]
@@ -45,12 +45,28 @@ function Historia(){
     return(
         <div className = "nossaHist">
             <div className = "texto">
-                <h1>História</h1>
-                <p>A Volare, referência em praticidade e atendimento ao consumidor no mercado brasileiro de intercâmbios.dasdasdasdasdasdasdasdasdassadasdaskldklasdklaskdlaslkdfnklasklfadklnfklandklnfkla...</p>
-            </div>
-                <div className = "depoContainer">
-                    {depoimentos.map((depoimentos) => (<Depoimentos key = {depoimentos.id} depoimentos = {depoimentos}/>))}
+                <div className = "titulo">
+                    <img src = "/images/avatar/hist.png" alt = "mundo" width = "250" height = "250"></img>
+                    <div className = "separa">
+                        <h1>NOSSA HISTÓRIA</h1>
+                    </div>
                 </div>
+                <p>a história da volare começou há 16 anos em belo horizonte e, desde então, a empresa tornou-se referência no mercado fornecendo aos nossos intercambistas o que apenas nós mesmos podemos oferecer: <font color = "#ffb703">profissionalismo</font>, <font color = "#ffb703">fidelidade</font> e <font color = "#ffb703">excelência</font></p>
+                <div className = "valores">
+                        <img src = "/images/avatar/prof.png" alt = "profissionalismo" width = "118" height = "118"></img>
+                        <div className = "ajustes1">
+                            <img src = "/images/avatar/cliente.png" alt = "cliente" width = "120" height = "120"></img>
+                        </div>
+                        <img src = "/images/avatar/excelencia.png" alt = "excelencia" width = "150" height = "150"></img>
+                </div>
+                <p>na constante busca pelos nossos objetivos, a nossa vitoriosa história é comprovada por quem nos acompanhou de perto ao longo desses 16 anos, nos <font color = "#ffb703">depoimentos</font> de alguns dos nossos ex-alunos: </p>
+            </div>
+            <div className = "depoContainer">
+                {depoimentos.map((depoimentos) => (<Depoimentos key = {depoimentos.id} depoimentos = {depoimentos}/>))}
+            </div>
+            <div className = "textoFinal">
+                <p>VENHA <font color = "#ffb703">VOCÊ</font> TAMBÉM FAZER PARTE DESSA HISTÓRIA!</p>
+            </div>
         </div>
     )
 }
