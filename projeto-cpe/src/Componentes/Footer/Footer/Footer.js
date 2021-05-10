@@ -8,38 +8,38 @@ function Footer(props) {
 
       <div className="body">
          <div className="baseFooter">
-            <div className="conjunto">
-               <div className="colunaum">
-                  <ul class="links">
-                     <li><a href="https://www.facebook.com/" title="facebook" target="_blank" rel="noreferrer">
-                        <IconContext.Provider value={{ color: "#219EBC", size: "1.5rem" }}>
+            <div className="Footer">
+               <div className="Footer-RedesSociais">
+                  <div class="RedesSociais">
+                     <p><a href="https://www.facebook.com/" title="facebook" target="_blank" rel="noreferrer">
+                        <IconContext.Provider value={{ color: "#219EBC", size: "1.6rem" }}>
                            <FaFacebookF />
                         </IconContext.Provider>
-                     </a></li>
+                     </a></p>
 
-                     <li><a href="https://www.instagram.com/" title="instagram" target="_blank" rel="noreferrer">
-                        <IconContext.Provider value={{ color: "#219EBC", size: "1.5rem" }}>
+                     <p><a href="https://www.instagram.com/" title="instagram" target="_blank" rel="noreferrer">
+                        <IconContext.Provider value={{ color: "#219EBC", size: "1.6rem" }}>
                            <FaInstagram />
                         </IconContext.Provider>
-                     </a></li>
+                     </a></p>
 
-                     <li><a href="https://www.spotify.com/br/" title="spotify" target="_blank" rel="noreferrer">
-                        <IconContext.Provider value={{ color: "#219EBC", size: "1.5rem" }}>
+                     <p><a href="https://www.spotify.com/br/" title="spotify" target="_blank" rel="noreferrer">
+                        <IconContext.Provider value={{ color: "#219EBC", size: "1.6rem" }}>
                            <FaSpotify />
                         </IconContext.Provider>
-                     </a></li>
+                     </a></p>
 
-                     <li><a href="https://www.linkedin.com/" title="facebook" target="_blank" rel="noreferrer">
-                        <IconContext.Provider value={{ color: "#219EBC", size: "1.5rem" }}>
+                     <p><a href="https://www.linkedin.com/" title="facebook" target="_blank" rel="noreferrer">
+                        <IconContext.Provider value={{ color: "#219EBC", size: "1.6rem" }}>
                            <FaLinkedinIn />
                         </IconContext.Provider>
-                     </a></li>
+                     </a></p>
 
-                  </ul>
+                  </div>
                </div>
-               <div className="colunadois">
+               <div className="Footer-Contatos">
                   <h2 className="contatos">Contatos</h2>
-                  <ul className="c2">
+                  <ul className="Contatos">
                      <li>  <IconContext.Provider value={{ color: "#219EBC", size: "1.5rem" }}>
                         <FaPhone />
                      </IconContext.Provider> (xx) xxxx-xxxx </li>
@@ -48,13 +48,13 @@ function Footer(props) {
                      </IconContext.Provider> (xx) x xxxx-xxxx</li>
                      <li>  <IconContext.Provider value={{ color: "#219EBC", size: "1.5rem" }}>
                         <FaEnvelope />
-                     </IconContext.Provider> volfhuaifafare@cpejr.com.br</li>
+                     </IconContext.Provider> volare@cpejr.com.br</li>
                   </ul>
 
                </div>
-               <div className="coluna3">
+               <div className="Footer-Links">
                   <h2>Links Utéis</h2>
-                  <ul className="c3">
+                  <ul className="LinksUteis">
                      <li>Política de Privacidade</li>
 
                   </ul>
