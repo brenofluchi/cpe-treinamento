@@ -65,3 +65,67 @@
         margin-left: 300px;
         margin-right: 300px;
     }
+
+@media (max-width: 428px){
+    .nossaHist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200%;
+        height: 300%;
+        background-color: #219ebc;
+    }
+
+    .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Girassol', cursive;
+        font-size: 3rem;
+    } 
+
+    .titulo{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .ajustes1{
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+
+    .valores{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    .separa{
+        margin-top: 30px;
+    }
+
+    .depoContainer{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .textoFinal{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Girassol', cursive;
+        font-size: 2rem;
+    }
+}
