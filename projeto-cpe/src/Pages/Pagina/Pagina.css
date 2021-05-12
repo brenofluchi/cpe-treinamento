@@ -49,3 +49,30 @@
     margin-left: 18%;
 }
 
+.caixama {
+    position: relative;
+    width: 80%;
+    height: 280px;
+    right: 20%;
+    background: #023047;
+    border-radius: 58px 0px 0px 58px;
+    display: table;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.caixama p{
+    color: white;
+    text-align: justify;
+    vertical-align:middle;
+    display: table-cell;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caixama img{
+    width: 350px;
+    height: 280x;
+    margin-left: 18%;
+}
+
+
