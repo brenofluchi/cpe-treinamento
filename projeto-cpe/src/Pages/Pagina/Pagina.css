@@ -10,6 +10,23 @@
     margin-top: 4%;
 }
 
+.Malta{
+    margin-top: 4%;
+}
+
+.NovaYork{
+    margin-top: 4%;
+}
+
+.Paris{
+    margin-top: 4%;
+}
+
+.Vancouver{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
 .titulo{
     background-color: #FFB703;
     width: 435px;
@@ -20,6 +37,7 @@
 }
 
 .titulo h1{
+    color: #219EBC;
     display: inline-block;
     line-height: 2;
     margin-left: 30%;
@@ -38,7 +56,7 @@
 }
 
 .caixab p{
-    color: white;
+    color: #FFB703;
     text-align: justify;
     vertical-align:middle;
     display: table-cell;
@@ -48,7 +66,7 @@
 
 .caixab img{
     width: 350px;
-    height: 280x;
+    height: 280px;
     margin-left: 18%;
 }
 
@@ -63,7 +81,7 @@
 }
 
 .caixama p{
-    color: white;
+    color: #023047;
     text-align: justify;
     vertical-align:middle;
     display: table-cell;
@@ -73,8 +91,108 @@
 
 .caixama img{
     width: 350px;
-    height: 280x;
+    height: 280px;
     margin-right: 59px;
 }
 
+.caixamt {
+    position: relative;
+    width: 80%;
+    height: 280px;
+    left: 20%;
+    background: #023047;
+    border-radius: 58px 0px 0px 58px;
+    display: table;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
+.caixamt p{
+    color: #FFB703;
+    text-align: justify;
+    vertical-align:middle;
+    display: table-cell;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caixamt img{
+    width: 350px;
+    height: 280px;
+    margin-left: 18%;
+}
+
+.caixany {
+    position: relative;
+    width: 80%;
+    height: 280px;
+    background: #FFB703;
+    border-radius: 0px 58px 58px 0px;
+    display: table;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.caixany p{
+    color: #023047;
+    text-align: justify;
+    vertical-align:middle;
+    display: table-cell;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caixany img{
+    width: 350px;
+    height: 280px;
+    margin-right: 59px;
+}
+
+.caixapa {
+    position: relative;
+    width: 80%;
+    height: 280px;
+    left: 20%;
+    background: #023047;
+    border-radius: 58px 0px 0px 58px;
+    display: table;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.caixapa p{
+    color: #FFB703;
+    text-align: justify;
+    vertical-align:middle;
+    display: table-cell;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caixapa img{
+    width: 350px;
+    height: 280px;
+    margin-left: 18%;
+}
+
+.caixavanc {
+    position: relative;
+    width: 80%;
+    height: 280px;
+    background: #FFB703;
+    border-radius: 0px 58px 58px 0px;
+    display: table;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.caixavanc p{
+    color: #023047;
+    text-align: justify;
+    vertical-align:middle;
+    display: table-cell;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caixavanc img{
+    width: 350px;
+    height: 280px;
+    margin-right: 59px;
+}
