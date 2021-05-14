@@ -40,12 +40,13 @@ function Perfil() {
     <div className= "base">
         <div className = "centro">
             <div className= "container">
-                <div className= "outputs">
+                <div className= "header">
                     <h1>Perfil</h1>
                         <div className= "lists">
                             <Container>
                                 <Col>
                                     <Cliente cliente={vini}/>
+                                    <br />
                                     <Button variant="outline-info">Editar</Button>
                                 </Col>
                                
