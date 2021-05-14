@@ -1,10 +1,10 @@
 import React from "react";
 import "./Perfil.css";
 import ListGroup from 'react-bootstrap/ListGroup';
-import {Form, Col, Button} from "react-bootstrap";
+import {Form, Col, Button, Container, Row} from "react-bootstrap";
 
 const vini = {
-email: "vvvvvv@gmail.com",
+email: "vvvvvvxxxxxxx@gmail.com",
 nome: "Vinícius Passos",
 idade: "22",
 telefone:"00000000",
@@ -42,25 +42,35 @@ function Perfil() {
             <div className= "container">
                 <div className= "outputs">
                     <h1>Perfil</h1>
-                    <Cliente cliente={vini}/>
-                    <Button variant="outline-info">Editar</Button>
-                    <Form>
-                        <Form.Row>
-                        <Form.Group as={Col} controlId="formGridNovaSenha">
-                            
-                            <Form.Control type="text" placeholder="Digite sua nova senha" />
-                            </Form.Group>
-                        </Form.Row> 
-                        <Form>
-                        <Form.Row>
-                        <Form.Group as={Col} controlId="formGridConfirmar">
-                            
-                            <Form.Control type="text" placeholder="Confirme sua nova senha" />
-                            </Form.Group>
-                        </Form.Row>
-                        </Form> 
-                    </Form>
-                    <Button variant="outline-info">Mudar Senha</Button>    
+                        <div className= "lists">
+                            <Container>
+                                <Col>
+                                    <Cliente cliente={vini}/>
+                                    <Button variant="outline-info">Editar</Button>
+                                </Col>
+                               
+                            </Container>
+                            <Container>
+                                <Col>
+                                    <Form>
+                                        <Form.Row>
+                                            <Form.Group as={Col} controlId="formGridNovaSenha">
+                                            
+                                            <Form.Control type="text" placeholder="Digite sua nova senha" />
+                                            </Form.Group>
+                                        </Form.Row>
+                                    </Form>       
+                                    <Form>
+                                    <Form.Row>
+                                        <Form.Group as={Col} controlId="formGridConfirmar">
+                                        <Form.Control type="text" placeholder="Confirme sua nova senha" />
+                                        </Form.Group>
+                                    </Form.Row>
+                                    </Form>
+                                    <Button variant="outline-info">Mudar Senha</Button>
+                                </Col>
+                            </Container>
+                        </div>     
                 </div>
             </div>
         </div>
