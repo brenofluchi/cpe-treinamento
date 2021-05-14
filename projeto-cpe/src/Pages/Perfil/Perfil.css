@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;  
+}
+
+.base{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color:#219EBC ;
+}
+
+.centro{ 
+    height: 38rem;
+    width: 100%;
+    display: flex;
+    background-color: #FEFEFE;
+    margin-bottom: 1.5em;
+    
+}
+
+.outputs{
+    display: flex;
+    flex-direction: column;
+   
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
