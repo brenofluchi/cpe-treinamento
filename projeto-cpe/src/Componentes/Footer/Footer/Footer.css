@@ -11,7 +11,7 @@
     width: 100%;
     height: auto;
     padding: 10px 50px;
-    background-color:#FFBC08;
+    background-color:rgb(255,183,3);
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;

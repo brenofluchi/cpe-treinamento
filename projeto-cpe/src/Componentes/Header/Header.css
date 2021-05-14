@@ -7,47 +7,87 @@
 .baseHeader{
     position: relative;
     width: 100%;
-    height: 100px;
-    background-color:#219EBC;
+    height: auto;
+    background-color:rgb(255, 183, 3);
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     text-decoration: none;
 }
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row ;
+}
 
-#menu ul{
-    padding:0px;
-    margin:0px;
-    background-color:#219EBC;
+#menu ul, #usuario ul{
+    padding:0%;
+    background-color:rgb(255, 183, 3);
     list-style:none;
 }
-#menu ul li {
-     display: inline;
+#menu ul li, #usuario ul li {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
 }
 #menu ul li a {
     font-family: Nunito, sans-serif;
-    margin-right: 55px;
-    margin-left: 50px;
-    margin-top: 30px;
     padding: 2px 10px;
     display: inline-flex;
-    background-color:#219EBC;
-    color: #333;
+    background-color:rgb(255, 183, 3);
+    color: rgb(17, 16, 13);
     text-decoration: none;
-    border-bottom:3px solid#219EBC;
     font-size: 20px;
 }
 #menu ul li a:hover {
-    color: rgb(255,188,8);
-    border-bottom:3px solid rgb(255, 188, 8);
+    color: rgb(33,158,188);
+    border-bottom:3px solid rgb(33, 158, 188);
+    transition: all 0.1s;
 }
+#usuario ul li a{
+    font-family: Nunito, sans-serif;
+    padding: 2px 10px;
+    display: inline-flex;
+    color: rgb(17,16,13);
+    background-color: rgb(33,158,188);
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#usuario ul li a:hover{
+    font-size: 17px;
+    border-radius:24px;
+    transition: all 0.25s ease-in;
+}
+.headerLogo{
+    display: flex;
+    align-items: center;
+}
+@media(max-width: 700px){
+    .header{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #usuario ul li a {
+        font-size: 0.8rem;
+    }
+    #menu ul li a {
+        font-size: 15px;
+    }
+    #menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .headerLogo{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
 
-.Header-botoes{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.HeaderLogo{
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
 }
