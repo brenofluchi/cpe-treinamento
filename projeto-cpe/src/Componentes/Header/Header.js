@@ -1,27 +1,39 @@
 import React from "react";
 import "./Header.css";
-import {Button} from "react-bootstrap";
+
 
 function Header() {
     return (
     
     <div className= "baseHeader">
-        <div className= "Header"></div>
-        
-            <div className="HeaderLogo">
-               <a href="./home" ><img src = "/images/logo4menorainda.png" alt = "Volare Intercâmbios"/></a>
+        <div className="header">
+            <div className="headerLogo">
+                <a href="./home" ><img src = "/images/logonovoheader.png"  title="Home" alt = "Volare Intercâmbios"/></a>
             </div>
-            <div className="Header-botoes">
-            <div className="HeaderLogin">
-                <p><a href="/login" title="login" target="_blank" rel="noreferrer"><Button variant="warning">Login</Button></a></p>
-            </div>
-           
-            <div className="HeaderCadastrar">
-                <p><a href="/cadastro" title="cadastro" target="_blank" rel="noreferrer"><Button variant="warning">Cadastrar</Button></a></p>
-            </div>
-            </div>
-            
-            
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href ="/home" title="Home">HOME</a>
+                    </li>
+                    <li>
+                        <a href ="/pagina" title="Destinos">DESTINOS</a>
+                    </li>
+                    <li>
+                        <a href ="/historia" title="Quem somos">QUEM SOMOS</a>
+                    </li>     
+                </ul>
+            </nav>
+            <nav id="usuario">
+                <ul>
+                    <li>
+                        <a href="/cadastro" title="Cadastro" target="_blank" rel="noreferrer">Cadastre-se</a>
+                    </li>
+                    <li>
+                        <a href="login" title="Login" target="_blank" rel="noreferrer">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
     )
 }
