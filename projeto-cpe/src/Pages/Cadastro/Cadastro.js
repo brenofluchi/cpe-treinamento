@@ -17,7 +17,7 @@ function Cadastro() {
                   
             
                 <div className= "inputs">
-                    <h1>Cadastro</h1>
+                    <h1 className= "CadastroH1">Cadastro</h1>
                         <Form>
                         <Form.Row>
                         <Form.Group as={Col} controlId="formGridNome">
@@ -99,7 +99,7 @@ function Cadastro() {
                         </Form.Group>
 
                             <Form.Group id="formGridCheckbox">
-                            <Form.Check type="checkbox" label="Concordo com os termos e condições" />
+                            <Form.Check type="checkbox" label="Concordo com os termos e condições." />
                         </Form.Group> 
                         <div className="cadastrar">
                         <Button variant="outline-info">Cadastrar</Button>
