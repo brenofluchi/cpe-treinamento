@@ -16,7 +16,7 @@ function Login()
     return (
     <div className = "base">
         <div className = "container">
-            <div >
+            <div className="entry">
                 <div className = "imagem">
                     <a href="./Home" title = "Home" > <img src = "/images/logo4menor.png" alt = "Volare Intercâmbios"/> </a>
                 </div>
