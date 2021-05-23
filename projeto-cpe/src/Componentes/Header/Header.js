@@ -31,6 +31,9 @@ function Header() {
                     <li>
                         <a href="login" title="Login" target="_blank" rel="noreferrer">Login</a>
                     </li>
+                    <li>
+                        <a href="perfil" title="Perfil" target="_blank" rel="noreferrer">Perfil</a>
+                    </li>
                 </ul>
             </nav>
         </div>
