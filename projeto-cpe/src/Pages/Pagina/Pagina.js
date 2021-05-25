@@ -20,7 +20,7 @@ function Intercambios() {
 
                         
                             <p><h1>Inglês em Brighton</h1>
-                            3 semanas de curso de Inglês na escola Ardmore, com acomodação e refeições inclusas e passeios para Brighton Pier, Londres, Harry Potter Studios e muito mais!
+                            <a>3 semanas de curso de Inglês na escola Ardmore, com acomodação e refeições inclusas e passeios para Brighton Pier, Londres, Harry Potter Studios e muito mais!</a>
                             <h1>14x de R$ 1.095,00</h1></p>
 
                     
@@ -34,7 +34,7 @@ function Intercambios() {
                     <div className = "caixama">
                                             
                             <p><h1>Espanhol em Madrid</h1>
-                            3 semanas de curso de Espanhol na Escuela Trazoz, com acomodação e refeições inclusas e passeios para Plaza Puerta Del Sol, Gran Via, Templo de Debod, Museu do Prado e mais!
+                            <a>3 semanas de curso de Espanhol na Escuela Trazoz, com acomodação e refeições inclusas e passeios para Plaza Puerta Del Sol, Gran Via, Templo de Debod, Museu do Prado e mais!</a>
                             <h1>10x de R$ 1.998,00</h1></p>
 
                             <img src = "./imagespag/madrid.png" alt = "Madrid"/>
@@ -53,7 +53,7 @@ function Intercambios() {
 
                     
                         <p><h1>Inglês na Ilha de Malta</h1>
-                        5 semanas de curso de Inglês na escola ACE English Malta, com acomodação, refeições, SIM Card e health care inclusos + passeios para Blue Lagoon, ilha de Gozo, Valletta e Three Cities.
+                        <a>5 semanas de curso de Inglês na escola ACE English Malta, com acomodação, refeições, SIM Card e health care inclusos + passeios para Blue Lagoon, ilha de Gozo, Valletta e Three Cities.</a>
                         <h1>12x de R$ 2.145,00</h1></p>
 
                 
@@ -67,7 +67,7 @@ function Intercambios() {
                 <div className = "caixany">
                                         
                         <p><h1>Inglês em Nova York</h1>
-                        6 semanas de curso de inglês na renomada LSI New York + refeições, acomodação e health care + passeio para Central Park, Brooklyn Bridge, Empire State Building e outros!
+                        <a>6 semanas de curso de inglês na renomada LSI New York + refeições, acomodação e health care + passeio para Central Park, Brooklyn Bridge, Empire State Building e outros!</a>
                         <h1>14x de R$ 2.998,00</h1></p>
 
                         <img src = "./imagespag/nyc.png" alt = "Nova York"/>
@@ -86,7 +86,7 @@ function Intercambios() {
 
                     
                         <p><h1>Francês em Paris</h1>
-                        5 semanas de curso de francês na École de langues Accord, com refeição, acomodação e health care inclusos. Além de passeios ao Arco do Triunfo, Torre Eiffel, Euro Disney e outros!
+                        <a>5 semanas de curso de francês na École de langues Accord, com refeição, acomodação e health care inclusos. Além de passeios ao Arco do Triunfo, Torre Eiffel, Euro Disney e outros!</a>
                         <h1>12x de R$ 2.895,00</h1></p>
 
                 
@@ -100,7 +100,7 @@ function Intercambios() {
             <div className = "caixavanc">
                                 
                     <p><h1>Inglês em Vancouver</h1>
-                    3 semanas de curso de Inglês na escola ILAC, com acomodação e refeições inclusas e passeios para Vancouver Aquarium, Ski Trip, Whistler e muito mais!
+                    <a>3 semanas de curso de Inglês na escola ILAC, com acomodação e refeições inclusas e passeios para Vancouver Aquarium, Ski Trip, Whistler e muito mais!</a>
                     <h1>12x de R$ 2.098,00</h1></p>
 
                     <img src = "./imagespag/vanc.png" alt = "Vancouver"/>
