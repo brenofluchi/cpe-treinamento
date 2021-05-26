@@ -45,13 +45,13 @@ function Historia(){
     return(
         <div className = "nossaHist">
             <div className = "texto">
-                <div className = "titulo">
+                <div className = "titulo1">
                     <img src = "/images/avatar/hist.png" alt = "mundo" width = "250" height = "250"></img>
                     <div className = "separa">
-                        <h1>NOSSA HISTÓRIA</h1>
+                        <h1><b><font color = "#ffb703">NOSSA HISTÓRIA</font></b></h1>
                     </div>
                 </div>
-                <p>a história da volare começou há 16 anos em belo horizonte e, desde então, a empresa tornou-se referência no mercado fornecendo aos nossos intercambistas o que apenas nós mesmos podemos oferecer: <font color = "#ffb703">profissionalismo</font>, <font color = "#ffb703">fidelidade</font> e <font color = "#ffb703">excelência</font></p>
+                <p><b>A história da volare começou há 16 anos em belo horizonte e, desde então, a empresa tornou-se referência no mercado fornecendo aos nossos intercambistas o que apenas nós mesmos podemos oferecer: <font color = "#ffb703">profissionalismo</font>, <font color = "#ffb703">fidelidade</font> e <font color = "#ffb703">excelência</font></b></p>
                 <div className = "valores">
                         <img src = "/images/avatar/prof.png" alt = "profissionalismo" width = "118" height = "118"></img>
                         <div className = "ajustes1">
@@ -59,13 +59,13 @@ function Historia(){
                         </div>
                         <img src = "/images/avatar/excelencia.png" alt = "excelencia" width = "150" height = "150"></img>
                 </div>
-                <p>na constante busca pelos nossos objetivos, a nossa vitoriosa história é comprovada por quem nos acompanhou de perto ao longo desses 16 anos, nos <font color = "#ffb703">depoimentos</font> de alguns dos nossos ex-alunos: </p>
+                <p><b>Na constante busca pelos nossos objetivos, a nossa vitoriosa história é comprovada por quem nos acompanhou de perto ao longo desses 16 anos, nos <font color = "#ffb703">depoimentos</font> de alguns dos nossos ex-alunos: </b></p>
             </div>
             <div className = "depoContainer">
                 {depoimentos.map((depoimentos) => (<Depoimentos key = {depoimentos.id} depoimentos = {depoimentos}/>))}
             </div>
             <div className = "textoFinal">
-                <p>VENHA <font color = "#ffb703">VOCÊ</font> TAMBÉM FAZER PARTE DESSA HISTÓRIA!</p>
+                <p><b>VENHA<font color = "#ffb703">VOCÊ</font> TAMBÉM FAZER PARTE DESSA HISTÓRIA!</b></p>
             </div>
         </div>
     )
