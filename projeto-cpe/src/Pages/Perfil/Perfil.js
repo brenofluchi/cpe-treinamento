@@ -31,25 +31,21 @@ function Cliente(props){
 
 };
 
-function AlteraSenha() {
-    
-}
 
 function Perfil() {
     return (
-    <div className= "base">
-        <div className = "centro">
-            <div className= "container">
-                <div className= "header">
+    <div className= "a1">
+        <div className = "a2">
+            <div className= "a3">
+                <div className= "a4">
                     <h1>Perfil</h1>
-                        <div className= "lists">
+                        <div className= "a5">
                             <Container>
                                 <Col>
                                     <Cliente cliente={vini}/>
                                     <br />
                                     <Button variant="outline-info">Editar</Button>
                                 </Col>
-                               
                             </Container>
                             <Container>
                                 <Col>
