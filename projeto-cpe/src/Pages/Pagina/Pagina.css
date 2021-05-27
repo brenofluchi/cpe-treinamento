@@ -396,3 +396,54 @@
         width: 152px;
     }
 }
+
+@media (max-width: 331px){
+
+    .titulo{
+        width: 180px;
+        height: 36px;
+        margin-bottom: 2%;
+    }
+
+    .titulo h2{
+        font-size: 13px;
+        line-height: 3;
+    }
+
+    .caixab, .caixamt, .caixapa{
+        border-radius: 32px 0px 0px 32px;
+    }
+
+    .caixama, .caixany, .caixavanc{
+        border-radius: 0px 32px 32px 0px;
+    }
+
+    .caixab p h1, .caixamt p h1, .caixapa p h1{
+        text-align: center;
+        font-size: 12px;
+        padding-left: 20%;
+        font-weight: bold;
+    }
+
+    .caixama p h1, .caixany p h1, .caixavanc p h1{
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .caixab p a, .caixamt p a, .caixapa p a, .caixany p a, .caixavanc p a, .caixama p a{
+        display: none;
+    }
+
+     
+    .caixab img, .caixamt img, .caixapa img{
+        height: 100px;
+        width: 130px;
+        margin-left: 27%;    
+    }
+
+    .caixama img, .caixany img, .caixavanc img{
+        height: 100px;
+        width: 130px;
+    }
+}
