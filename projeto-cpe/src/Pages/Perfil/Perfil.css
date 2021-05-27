@@ -11,25 +11,36 @@
     width: 100%;
     display: flex;
     background-color: #FEFEFE;
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
     justify-content: center;
     align-items: center;    
 }
 
 .a3{
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
+    flex-direction: column;
     margin-top: 0.5rem;
 }
 
 .a4{
     display: flex;
-    flex-direction: row;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.3rem ;
+    margin-right: 0.3rem ;
+}
+
+.changePassword{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editar{
+    display: flex;
+    flex-direction: column;
 }
 
 @media(max-width:700px) {
