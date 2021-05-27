@@ -12,7 +12,7 @@ function Footer(props) {
                <div className="Footer-RedesSociais">
                   <div class="RedesSociais">
                      <p><a href="https://www.facebook.com/" title="facebook" target="_blank" rel="noreferrer">
-                        <IconContext.Provider value={{ color: "#219EBC", size: "1.6rem" }}>
+                        <IconContext.Provider value={{ color: "#219EBC", size: "1.4rem" }}>
                            <FaFacebookF />
                         </IconContext.Provider>
                      </a></p>
@@ -52,32 +52,12 @@ function Footer(props) {
                   </ul>
 
                </div>
-               <div className="Footer-Links">
-                  <h2 className="LinksUteisH"><b>Links Utéis</b></h2>
-                  <ul className="LinksUteis">
-                     <li><b>Política de Privacidade</b></li>
-
-                  </ul>
-
-               </div>
-
-
-
-
-
-
-
-               
-
-
-
-
 
             </div>
             <div className="copyright">
-                  <hr className="hr" />
+               <hr className="hr" />
                      &copy;{new Date().getFullYear()} <b>    VOLARE INTERCÂMBIOS. Todos os direitos reservados</b>
-                 </div>
+            </div>
          </div>
       </div>
    )
