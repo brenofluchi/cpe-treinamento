@@ -31,15 +31,14 @@ function Cliente(props){
 
 };
 
-
 function Perfil() {
+
     return (
     <div className= "a1">
         <div className = "a2">
-            <div className= "a3">
-                <div className= "a4">
-                    <h1>Perfil</h1>
-                        <div className= "a5">
+                <div className= "a3">
+                    <h1 className="t1">Perfil</h1>
+                        <div className= "a4">
                             <Container>
                                 <Col>
                                     <Cliente cliente={vini}/>
@@ -52,7 +51,6 @@ function Perfil() {
                                     <Form>
                                         <Form.Row>
                                             <Form.Group as={Col} controlId="formGridNovaSenha">
-                                            
                                             <Form.Control type="text" placeholder="Digite sua nova senha" />
                                             </Form.Group>
                                         </Form.Row>
@@ -69,7 +67,6 @@ function Perfil() {
                             </Container>
                         </div>     
                 </div>
-            </div>
         </div>
     </div>
         );
