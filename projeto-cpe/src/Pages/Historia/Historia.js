@@ -51,7 +51,7 @@ function Historia(){
                         <h1><b><font color = "#ffb703">NOSSA HISTÓRIA</font></b></h1>
                     </div>
                 </div>
-                <p><b>A história da volare começou há 16 anos em belo horizonte e, desde então, a empresa tornou-se referência no mercado fornecendo aos nossos intercambistas o que apenas nós mesmos podemos oferecer: <font color = "#ffb703">profissionalismo</font>, <font color = "#ffb703">fidelidade</font> e <font color = "#ffb703">excelência</font></b></p>
+                <p><b>A história da volare começou há 16 anos em Belo Horizonte e, desde então, a empresa tornou-se referência no mercado fornecendo aos nossos intercambistas o que apenas nós mesmos podemos oferecer: <font color = "#ffb703">profissionalismo</font>, <font color = "#ffb703">fidelidade</font> e <font color = "#ffb703">excelência</font></b></p>
                 <div className = "valores">
                         <img src = "/images/avatar/prof.png" alt = "profissionalismo" width = "118" height = "118"></img>
                         <div className = "ajustes1">
@@ -65,7 +65,7 @@ function Historia(){
                 {depoimentos.map((depoimentos) => (<Depoimentos key = {depoimentos.id} depoimentos = {depoimentos}/>))}
             </div>
             <div className = "textoFinal">
-                <p><b>VENHA<font color = "#ffb703">VOCÊ</font> TAMBÉM FAZER PARTE DESSA HISTÓRIA!</b></p>
+                <p><b>VENHA<font color = "#ffb703"> VOCÊ</font> TAMBÉM FAZER PARTE DESSA HISTÓRIA!</b></p>
             </div>
         </div>
     )
