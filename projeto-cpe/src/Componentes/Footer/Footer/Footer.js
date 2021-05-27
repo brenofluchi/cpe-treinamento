@@ -38,24 +38,24 @@ function Footer(props) {
                   </div>
                </div>
                <div className="Footer-Contatos">
-                  <h2 className="ContatosH">Contatos</h2>
+                  <h2 className="ContatosH"><b>Contatos</b></h2>
                   <ul className="Contatos">
                      <li>  <IconContext.Provider value={{ color: "#219EBC", size: "1.4rem" }}>
                         <FaPhone />
-                     </IconContext.Provider> (xx) xxxx-xxxx </li>
+                     </IconContext.Provider> <b>(xx) xxxx-xxxx</b> </li>
                      <li>  <IconContext.Provider value={{ color: "#219EBC", size: "1.4rem" }}>
                         <FaWhatsapp />
-                     </IconContext.Provider> (xx) x xxxx-xxxx</li>
+                     </IconContext.Provider> <b>(xx) x xxxx-xxxx</b></li>
                      <li>  <IconContext.Provider value={{ color: "#219EBC", size: "1.4rem" }}>
                         <FaEnvelope />
-                     </IconContext.Provider> volare@cpejr.com.br</li>
+                     </IconContext.Provider> <b>volare@cpejr.com.br</b></li>
                   </ul>
 
                </div>
                <div className="Footer-Links">
-                  <h2 className="LinksUteisH">Links Utéis</h2>
+                  <h2 className="LinksUteisH"><b>Links Utéis</b></h2>
                   <ul className="LinksUteis">
-                     <li>Política de Privacidade</li>
+                     <li><b>Política de Privacidade</b></li>
 
                   </ul>
 
@@ -76,7 +76,7 @@ function Footer(props) {
             </div>
             <div className="copyright">
                   <hr className="hr" />
-                     &copy;{new Date().getFullYear()} VOLARE INTERCÂMBIOS. Todos os direitos reservados
+                     &copy;{new Date().getFullYear()} <b>    VOLARE INTERCÂMBIOS. Todos os direitos reservados</b>
                  </div>
          </div>
       </div>

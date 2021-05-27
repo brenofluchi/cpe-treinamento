@@ -13,26 +13,26 @@ function Header() {
             <nav id="menu">
                 <ul>
                     <li>
-                        <a href ="/home" title="Home">HOME</a>
+                        <a href ="/home" title="Home"><b>HOME</b></a>
                     </li>
                     <li>
-                        <a href ="/pagina" title="Destinos">DESTINOS</a>
+                        <a href ="/pagina" title="Destinos"><b>DESTINOS</b></a>
                     </li>
                     <li>
-                        <a href ="/historia" title="Quem somos">QUEM SOMOS</a>
+                        <a href ="/historia" title="Quem somos"><b>QUEM SOMOS</b></a>
                     </li>     
                 </ul>
             </nav>
             <nav id="usuario">
                 <ul>
                     <li>
-                        <a href="/cadastro" title="Cadastro" target="_blank" rel="noreferrer">Cadastre-se</a>
+                        <a href="/cadastro" title="Cadastro" target="_blank" rel="noreferrer"><b>Cadastre-se</b></a>
                     </li>
                     <li>
-                        <a href="login" title="Login" target="_blank" rel="noreferrer">Login</a>
+                        <a href="login" title="Login" target="_blank" rel="noreferrer"><b>Login</b></a>
                     </li>
                     <li>
-                        <a href="perfil" title="Perfil" target="_blank" rel="noreferrer">Perfil</a>
+                        <a href="perfil" title="Perfil" target="_blank" rel="noreferrer"><b>Perfil</b></a>
                     </li>
                 </ul>
             </nav>
