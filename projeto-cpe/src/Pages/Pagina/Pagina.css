@@ -252,7 +252,7 @@
  }
 
 
- @media (max-width: 819px){
+@media (max-width: 819px){
 
     .titulo{
         width: 350px;
@@ -276,7 +276,7 @@
  }
 
  
- @media (max-width: 690px){
+@media (max-width: 737px){
 
     .titulo{
         width: 290px;
@@ -291,7 +291,13 @@
     .caixab p h1, .caixamt p h1, .caixapa p h1, .caixama p h1, .caixany p h1, .caixavanc p h1{
         text-align: center;
         font-size: 25px;
+        font-weight: bold;
     }
+
+    .caixab p h1, .caixamt p h1, .caixapa p h1{
+        padding-left: 10%;
+    }
+
 
     .caixab p a, .caixamt p a, .caixapa p a, .caixany p a, .caixavanc p a, .caixama p a{
         display: none;
@@ -335,11 +341,13 @@
         text-align: center;
         font-size: 20px;
         padding-left: 20%;
+        font-weight: bold;
     }
 
     .caixama p h1, .caixany p h1, .caixavanc p h1{
         text-align: center;
         font-size: 20px;
+        font-weight: bold;
     }
     
     .caixab p a, .caixamt p a, .caixapa p a, .caixany p a, .caixavanc p a, .caixama p a{
@@ -373,11 +381,13 @@
         text-align: center;
         font-size: 16px;
         padding-left: 20%;
+        font-weight: bold;
     }
 
     .caixama p h1, .caixany p h1, .caixavanc p h1{
         text-align: center;
         font-size: 16px;
+        font-weight: bold;
     }
     
     .caixab p a, .caixamt p a, .caixapa p a, .caixany p a, .caixavanc p a, .caixama p a{
