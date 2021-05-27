@@ -31,32 +31,26 @@ function Cliente(props){
 
 };
 
-function AlteraSenha() {
-    
-}
-
 function Perfil() {
+
     return (
-    <div className= "base">
-        <div className = "centro">
-            <div className= "container">
-                <div className= "header">
-                    <h1>Perfil</h1>
-                        <div className= "lists">
+    <div className= "a1">
+        <div className = "a2">
+                <div className= "a3">
+                    <h1 className="t1">Perfil</h1>
+                        <div className= "a4">
                             <Container>
                                 <Col>
                                     <Cliente cliente={vini}/>
                                     <br />
                                     <Button variant="outline-info">Editar</Button>
                                 </Col>
-                               
                             </Container>
                             <Container>
                                 <Col>
                                     <Form>
                                         <Form.Row>
                                             <Form.Group as={Col} controlId="formGridNovaSenha">
-                                            
                                             <Form.Control type="text" placeholder="Digite sua nova senha" />
                                             </Form.Group>
                                         </Form.Row>
@@ -73,7 +67,6 @@ function Perfil() {
                             </Container>
                         </div>     
                 </div>
-            </div>
         </div>
     </div>
         );
