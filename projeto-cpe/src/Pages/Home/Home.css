@@ -1,44 +1,53 @@
-.containerHome
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+.paginahome
 {
     background-color:rgb(33, 158, 188) ;
+    width: 100%;
     height: 100%;
-    margin: 0px;
 }
-.header
+.texto
 {
-    display: flex;
-    align-items: center;
-    margin-left: 0%;
-    position: relative;
-    width: 90%;
-    height: 95px;
-}
-.foto
-{
+    font-family: Nunito, sans-serif;
+    margin-top: 4%;
+    margin-bottom: 4%;
     margin-left: 10%;
-    margin-right: 20%;
-    margin-top: 50px;
-    margin-bottom: 2%;
-    width:300px;
-    height: 100px;
-}
-.cadastro
-{
-    display: flex;
-    margin-left: 30%;
-    margin-right: 50%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    height:max-content;
-    width: max-content;
-}
-.botoes
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.historia
-{
     margin-right: 10%;
+}
+.texto h1
+{
+    font-weight: bold;
+}
+.texto p
+{
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.paragrafo
+{
+    width:100%;
+}
+@media (max-width:1024px)
+{
+    .texto p
+    {
+        font-size: medium;
+    }
+}
+@media (max-width:425px)
+{
+    .texto h1
+    {
+        font-size: medium;
+    }
+    .texto p
+    {
+        font-size: small;
+    }
+    .texto
+    {
+        margin-left: 7%;
+    }
 }
