@@ -26,13 +26,13 @@ function Header() {
             <nav id="usuario">
                 <ul>
                     <li>
-                        <a href="/cadastro" title="Cadastro" target="_blank" rel="noreferrer"><b>Cadastre-se</b></a>
+                        <a href="/cadastro" title="Cadastro"  rel="noreferrer"><b>Cadastre-se</b></a>
                     </li>
                     <li>
-                        <a href="login" title="Login" target="_blank" rel="noreferrer"><b>Login</b></a>
+                        <a href="login" title="Login"  rel="noreferrer"><b>Login</b></a>
                     </li>
                     <li>
-                        <a href="perfil" title="Perfil" target="_blank" rel="noreferrer"><b>Perfil</b></a>
+                        <a href="perfil" title="Perfil"  rel="noreferrer"><b>Perfil</b></a>
                     </li>
                 </ul>
             </nav>
