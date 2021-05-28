@@ -17,6 +17,7 @@ function Cadastro() {
     const [password, setPassword] = useState();
     const history = useHistory();
     
+<<<<<<< HEAD
 
     async function handleCadastrar(e){
         e.preventDefault();
@@ -28,7 +29,7 @@ function Cadastro() {
         alert(
             "Bem vindo " + body.nome); 
         }catch (err) {
-            alert("Teve um erro no cadastro, tente novamente.");
+            alert("Teve um erro no cadastro, tente novamente.");  
         } 
     }
     return (
@@ -117,7 +118,7 @@ function Cadastro() {
                             <Form.Check type="checkbox" label="Concordo com os termos e condições." />
                         </Form.Group> 
                         <div className="cadastrar">
-                        <Button variant="outline-info" onClick={(e) => handleCadastrar(e)}>Cadastrar</Button>
+                        <Button variant="outline-info" onClick={handleCadastrar}>Cadastrar</Button>
                         </div>
                         </Form>    
                 </div>
