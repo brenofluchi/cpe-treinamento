@@ -17,7 +17,6 @@ function Cadastro() {
     const [password, setPassword] = useState();
     const history = useHistory();
     
-<<<<<<< HEAD
 
     async function handleCadastrar(e){
         e.preventDefault();
@@ -27,7 +26,8 @@ function Cadastro() {
     //console.log(body);
         const response = await api.post('/user', body);
         alert(
-            "Bem vindo " + body.nome); 
+            "Bem vindo " + body.nome);
+            history.push("login") 
         }catch (err) {
             alert("Teve um erro no cadastro, tente novamente.");  
         } 
