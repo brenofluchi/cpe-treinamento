@@ -5,7 +5,7 @@ import { Form, Col, Button, Container, Row } from "react-bootstrap";
 import api from "../../services/api";
 
 function Perfil() {
-
+    const history = useHistory();
     useEffect(() => {
         async function fetchData() {
             const response = await api.get('/profile');
@@ -39,6 +39,8 @@ function Perfil() {
         const response = await api.put('/user', body);
         console.log(response.data);
         const { data } = response;
+        alert("Dados cadastrais alterados com sucesso!")
+        history.push("perfil");
     }
 
     return (
@@ -56,38 +58,38 @@ function Perfil() {
                             </Form.Row>
                             <Form.Group controlId="editEmail">
                                 <Form.Label><b>Email</b></Form.Label>
-                                <Form.Control type="email" placeholder="E-mail" value={email} />
+                                <Form.Control type="email" placeholder="E-mail" value={email} disabled={edicao} onChange={(e) => setEmail(e.target.value)}  />
                             </Form.Group>
                             <Form.Group controlId="editTelefone">
                                 <Form.Label><b>Número de Telefone</b></Form.Label>
-                                <Form.Control type="text" value={telefone} />
+                                <Form.Control type="text" value={telefone} disabled={edicao} onChange={(e) => setTelefone(e.target.value)} />
                             </Form.Group>
                             <Form.Row>
                                 <Form.Group as={Col} controlId="editState">
                                     <Form.Label><b>Estado</b></Form.Label>
-                                    <Form.Control type="text" value={estado}>
+                                    <Form.Control type="text" value={estado} disabled={edicao} onChange={(e) => setEstado(e.target.value)} >
                                     </Form.Control>
                                 </Form.Group>
 
                                 <Form.Group as={Col} controlId="editCidade">
                                     <Form.Label><b>Cidade</b></Form.Label>
-                                    <Form.Control type="text" value={cidade} />
+                                    <Form.Control type="text" value={cidade} disabled={edicao} onChange={(e) => setCidade(e.target.value)}  />
                                 </Form.Group>
 
                                 <Form.Group as={Col} controlId="editCEP">
                                     <Form.Label><b>CEP</b></Form.Label>
-                                    <Form.Control placeholder="CEP" value={cep} />
+                                    <Form.Control placeholder="CEP" value={cep} disabled={edicao} onChange={(e) => setCep(e.target.value)} />
                                 </Form.Group>
                             </Form.Row>
 
                             <Form.Group controlId="editEndereco">
                                 <Form.Label><b>Logradouro</b></Form.Label>
-                                <Form.Control type=" " placeholder="Logradouro" value={logradouro} />
+                                <Form.Control type=" " placeholder="Logradouro" value={logradouro} disabled={edicao} onChange={(e) => setLogradouro(e.target.value)} />
                             </Form.Group>
 
                             <Form.Group controlId="editInteresse">
                                 <Form.Label><b>Intercâmbio dos Sonhos</b></Form.Label>
-                                <Form.Control type="textarea " placeholder="Qual o seu intercâmbio dos sonhos?" value={sonho} />
+                                <Form.Control type="textarea " placeholder="Qual o seu intercâmbio dos sonhos?" value={sonho} disabled={edicao} onChange={(e) => setSonho(e.target.value)}  />
                             </Form.Group>
 
                             <div className="editar">

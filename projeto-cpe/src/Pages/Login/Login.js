@@ -39,11 +39,6 @@ function Login() {
                             <Form.Control type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)} />
                         </Form.Group>
                         <Button variant="warning" style={{ backgroundColor: "rgb(255, 183, 3)" }} onClick={handleLogin}>Login</Button>{''}
-                        <Form.Group controlId="editPassword">
-                            <Form.Label><b>Esqueceu sua senha? (Será enviado um link para recuperação) </b></Form.Label>
-                            <Form.Control type="password" placeholder="Digite seu email" />
-                        </Form.Group>
-                        <Button variant="warning">Enviar</Button>
                     </Form>
                 </div>
             </div>
