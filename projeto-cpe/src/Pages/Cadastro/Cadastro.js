@@ -17,52 +17,24 @@ function Cadastro() {
     const [password, setPassword] = useState();
     const history = useHistory();
     
-    /*function handleNomeChange(e){
-        setNome(e.target.value);
-    }
-    function handleEmailChange(e){
-        setEmail(e.target.value);
-    }
-    function handleTelefoneChange(e){
-        setTelefone(e.target.value);
-    }
-    function handleEstadoChange(e){
-        setEstado(e.target.value);
-    }
-    function handleCidadeChange(e){
-        setCidade(e.target.value);
-    }
-    function handleCepChange(e){
-        setCep(e.target.value);
-    }
-    function handleLogradouroChange(e){
-        setLogradouro(e.target.value);
-    }
-    function handleSonhoChange(e){
-        setSonho(e.target.value);
-    }
-    function handlePasswordChange(e){
-        setPassword(e.target.value);
-    }*/
-
-    async function handleCadastrar(e)
-    {
+    async function handleCadastrar(e) { 
         e.preventDefault();
-        const body = {
-        nome,
-        email,
-        telefone,
-        estado,
-        cidade,
-        cep,
-        logradouro,
-        sonho,
-        password,
-    };
-        try{
-            const response = await api.post('/cadastro', {body});
-            console.log(response.data);
-
+     
+        try{   
+            const body = {
+                nome,
+                email,
+                telefone,
+                estado,
+                cidade,
+                cep,
+                logradouro,
+                sonho,
+                password,
+            };   
+            console.log(body);
+        const response = await api.post("/cadastro", body);
+               
         }catch (error) {
             console.error(error);
         } 
@@ -155,7 +127,7 @@ function Cadastro() {
                             <Form.Check type="checkbox" label="Concordo com os termos e condições." />
                         </Form.Group> 
                         <div className="cadastrar">
-                        <Button variant="outline-info" onClick={(e) => handleCadastrar(e)}>Cadastrar</Button>
+                        <Button variant="outline-info" onClick={handleCadastrar}>Cadastrar</Button>
                         </div>
                         </Form>    
                 </div>
