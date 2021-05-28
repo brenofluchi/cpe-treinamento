@@ -8,6 +8,8 @@ import Login from "./Pages/Login";
 import Pagina from "./Pages/Pagina";
 import Perfil from "./Pages/Perfil";
 import Header from "./Componentes/Header";
+import pE from "./Pages/perfilEstatico";
+
 import { isAuthenticated } from "./services/auth";
 import { Component } from "react";
 
@@ -35,9 +37,10 @@ function Routes(){
             <Route path="/home" component={Home}/>
             <Route path="/login" component={Login}/>
             <Route path="/pagina" component={Pagina}/>
-            <PrivateRoute path="/perfil" component={Perfil}/>
+            <Route path="/perfil" component={Perfil}/>
             <Route path="/footer" component={Footer}/>
             <Route path="/header" component={Header}/>
+            <Route path="/perfilEstatico" component={pE}/>
             <Route component={()=> <Redirect to= "/home" />}/>
         </Switch>
     </BrowserRouter>
