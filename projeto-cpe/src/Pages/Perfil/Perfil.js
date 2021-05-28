@@ -1,42 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 import "./Perfil.css";
-import ListGroup from 'react-bootstrap/ListGroup';
 import {Form, Col, Button, Container, Row} from "react-bootstrap";
-import { Modal } from "@material-ui/core";
+import api from "../../services/api";
 
-const vini = {
-nome: "Vinícius Passos",
-idade: "22",
-email: "vvvvvvxxxxxxx@gmail.com",
-telefone:"00000000",
-estado:"DF",
-cidade:"Brasília",
-logradouro:"Zona urbana",
-cep:"XXXXXXXX",
-sonho:"New york",
+function Perfil() {
 
-};
+    const [nome, setNome] = useState();
+    const [email, setEmail] = useState();
+    const [telefone, setTelefone] = useState();
+    const [estado, setEstado] = useState();
+    const [cidade, setCidade] = useState();
+    const [cep, setCep] = useState();
+    const [logradouro, setLogradouro] = useState();
+    const [sonho, setSonho] = useState();
+    const [password, setPassword] = useState();
 
-function Cliente(props){
-    return(
-        <div>
-            <ListGroup>
-              <ListGroup.Item>Nome: {props.cliente.nome}</ListGroup.Item>
-              <ListGroup.Item>Idade: {props.cliente.idade}</ListGroup.Item>
-              <ListGroup.Item>Email: {props.cliente.email}</ListGroup.Item>
-              <ListGroup.Item>Telefone: {props.cliente.telefone}</ListGroup.Item>
-              <ListGroup.Item>Estado: {props.cliente.estado}</ListGroup.Item>
-              <ListGroup.Item>Cidade: {props.cliente.cidade}</ListGroup.Item>
-              <ListGroup.Item>logradouro: {props.cliente.logradouro}</ListGroup.Item>
-              <ListGroup.Item>CEP: {props.cliente.cep}</ListGroup.Item>
-              <ListGroup.Item>sonho: {props.cliente.sonho}</ListGroup.Item>
-            </ListGroup>
-        </div>
-    );
+    async function handlePerfil(e){
+        e.preventDefault();
+        const body = { nome, email, telefone, estado, cidade, cep, logradouro, sonho, password,
+        };
+        try{
+    //console.log(body);
+        const response = await api.get('/user', body);
 
-};
-
-function Perfil(props) {
+        }catch (err) {
+            alert(err);
+        } 
+    }
 
      return (
         <div className= "a1">
@@ -125,10 +116,6 @@ function Perfil(props) {
                         <Form.Group  controlId="editPassword">
                         <Form.Label><b>Nova Senha</b></Form.Label>
                             <Form.Control type="password" placeholder="Digite sua Nova Senha" />
-                        </Form.Group>
-                        <Form.Group  controlId="editConfirmPassword">
-                        <Form.Label><b>Confirmar Nova senha</b></Form.Label>
-                            <Form.Control type="password" placeholder="Confirme sua Nova Senha" />
                         </Form.Group>
                         <div className="changePassword">
                         <Button variant="outline-info">Trocar Senha</Button>
