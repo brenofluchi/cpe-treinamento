@@ -17,58 +17,20 @@ function Cadastro() {
     const [password, setPassword] = useState();
     const history = useHistory();
     
-    /*function handleNomeChange(e){
-        setNome(e.target.value);
-    }
-    function handleEmailChange(e){
-        setEmail(e.target.value);
-    }
-    function handleTelefoneChange(e){
-        setTelefone(e.target.value);
-    }
-    function handleEstadoChange(e){
-        setEstado(e.target.value);
-    }
-    function handleCidadeChange(e){
-        setCidade(e.target.value);
-    }
-    function handleCepChange(e){
-        setCep(e.target.value);
-    }
-    function handleLogradouroChange(e){
-        setLogradouro(e.target.value);
-    }
-    function handleSonhoChange(e){
-        setSonho(e.target.value);
-    }
-    function handlePasswordChange(e){
-        setPassword(e.target.value);
-    }*/
 
-    async function handleCadastrar(e)
-    {
+    async function handleCadastrar(e){
         e.preventDefault();
-        const body = {
-        nome,
-        email,
-        telefone,
-        estado,
-        cidade,
-        cep,
-        logradouro,
-        sonho,
-        password,
-    };
+        const body = { nome, email, telefone, estado, cidade, cep, logradouro, sonho, password,
+        };
         try{
-            const response = await api.post('/cadastro', {body});
-            console.log(response.data);
-
-        }catch (error) {
-            console.error(error);
+    //console.log(body);
+        const response = await api.post('/user', body);
+        alert(
+            "Bem vindo " + body.nome); 
+        }catch (err) {
+            alert("Teve um erro no cadastro, tente novamente.");
         } 
-        //history.push("login");
     }
-
     return (
        
     <div className= "base">
