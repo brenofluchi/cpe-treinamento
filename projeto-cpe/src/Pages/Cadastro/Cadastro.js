@@ -1,45 +1,103 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 import "./Cadastro.css";
 import {Form, Col,Button} from "react-bootstrap";
-
-
+import api from "../../services/api";
 
 
 function Cadastro() {
-
-
+    const [nome, setNome] = useState();
+    const [email, setEmail] = useState();
+    const [telefone, setTelefone] = useState();
+    const [estado, setEstado] = useState();
+    const [cidade, setCidade] = useState();
+    const [cep, setCep] = useState();
+    const [logradouro, setLogradouro] = useState();
+    const [sonho, setSonho] = useState();
+    const [password, setPassword] = useState();
+    const history = useHistory();
     
+    /*function handleNomeChange(e){
+        setNome(e.target.value);
+    }
+    function handleEmailChange(e){
+        setEmail(e.target.value);
+    }
+    function handleTelefoneChange(e){
+        setTelefone(e.target.value);
+    }
+    function handleEstadoChange(e){
+        setEstado(e.target.value);
+    }
+    function handleCidadeChange(e){
+        setCidade(e.target.value);
+    }
+    function handleCepChange(e){
+        setCep(e.target.value);
+    }
+    function handleLogradouroChange(e){
+        setLogradouro(e.target.value);
+    }
+    function handleSonhoChange(e){
+        setSonho(e.target.value);
+    }
+    function handlePasswordChange(e){
+        setPassword(e.target.value);
+    }*/
+
+    async function handleCadastrar(e)
+    {
+        e.preventDefault();
+        const body = {
+        nome,
+        email,
+        telefone,
+        estado,
+        cidade,
+        cep,
+        logradouro,
+        sonho,
+        password,
+    };
+        try{
+            const response = await api.post('/cadastro', {body});
+            console.log(response.data);
+
+        }catch (error) {
+            console.error(error);
+        } 
+        //history.push("login");
+    }
+
     return (
        
     <div className= "base">
         <div className= "centro">       
             <div className= "Container">
-                  
-            
                 <div className= "inputs">
                     <h1 className= "CadastroH1">Cadastro</h1>
                         <Form>
                         <Form.Row>
                         <Form.Group as={Col} controlId="formGridNome">
                             
-                            <Form.Control type="text" placeholder="Nome Completo" />
+                            <Form.Control type="text" placeholder="Nome Completo" onChange = {(e) => setNome(e.target.value)}/>
                             </Form.Group>
                         </Form.Row> 
                             
                             <Form.Group  controlId="formGridEmail">
                             
-                            <Form.Control type="email" placeholder="E-mail" />
+                            <Form.Control type="email" placeholder="E-mail" onChange = {(e) => setEmail(e.target.value)}/>
                             </Form.Group>
 
                             <Form.Group  controlId="formGridTelefone">
                             
-                            <Form.Control type="text" placeholder="Telefone" />
+                            <Form.Control type="text" placeholder="Telefone" onChange = {(e) => setTelefone(e.target.value)}/>
                             </Form.Group>
                         
 
                         <Form.Row>
                             <Form.Group as={Col} controlId="formGridState">
-                            <Form.Control as="select" defaultValue="Estado">
+                            <Form.Control as="select" defaultValue="Estado" onChange = {(e) => setEstado(e.target.value)}>
                                 <option>Estado</option>
                                 <option>AC</option>
                                 <option>AL</option>
@@ -73,39 +131,33 @@ function Cadastro() {
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridCidade">
-                            <Form.Control type="text" placeholder="Cidade"/>
+                            <Form.Control type="text" placeholder="Cidade" onChange = {(e) => setCidade(e.target.value)}/>
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridCEP">
-                            <Form.Control placeholder="CEP"/>
+                            <Form.Control placeholder="CEP" onChange = {(e) => setCep(e.target.value)}/>
                             </Form.Group>
                         </Form.Row>
                         
                         <Form.Group controlId="formGridEndereco">
-                            <Form.Control type=" " placeholder="Logradouro" />
+                            <Form.Control type=" " placeholder="Logradouro" onChange = {(e) => setLogradouro(e.target.value)}/>
                         </Form.Group>
                         
                         <Form.Group controlId="formGridInteresse">
-                            <Form.Control type="textarea " placeholder="Qual o seu intercâmbio dos sonhos?" />
+                            <Form.Control type="textarea " placeholder="Qual o seu intercâmbio dos sonhos?" onChange = {(e) => setSonho(e.target.value)}/>
                         </Form.Group>
                        
                         <Form.Group  controlId="formGridPassword">
                             
-                            <Form.Control type="password" placeholder="Senha" />
+                            <Form.Control type="password" placeholder="Senha"  onChange = {(e) => setPassword(e.target.value)}/>
                         </Form.Group>
-                        <Form.Group  controlId="formGridConfirmPassword">
-                            
-                            <Form.Control type="password" placeholder="Confirmar Senha" />
-                        </Form.Group>
-
                             <Form.Group id="formGridCheckbox">
                             <Form.Check type="checkbox" label="Concordo com os termos e condições." />
                         </Form.Group> 
                         <div className="cadastrar">
-                        <Button variant="outline-info">Cadastrar</Button>
+                        <Button variant="outline-info" onClick={(e) => handleCadastrar(e)}>Cadastrar</Button>
                         </div>
-                        </Form>
-                    
+                        </Form>    
                 </div>
             </div> 
         </div>

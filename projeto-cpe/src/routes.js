@@ -38,7 +38,7 @@ function Routes(){
             <Route path="/home" component={Home}/>
             <Route path="/login" component={Login}/>
             <Route path="/pagina" component={Pagina}/>
-            <PrivateRoute path="/perfil" component={Perfil}/>
+            <Route path="/perfil" component={Perfil}/>
             <Route path="/footer" component={Footer}/>
             <Route path="/header" component={Header}/>
             <Route component={()=> <Redirect to= "/home" />}/>
